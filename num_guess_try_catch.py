@@ -17,6 +17,7 @@ def main():
     try:
         # convert user guess to an integer
         user_guess_int = int(user_guess_string)
+
         # if the user gets the number right, tell them they were right
         if user_guess_int == random_answer:
             print("Your guess was right!")
@@ -26,7 +27,7 @@ def main():
                 "Your guess was wrong! The right answer was {}.".format(random_answer)
             )
     except:
-        # if user guess cannot be an integer, then tell the user to enter an integer.
+        # if user guess cannot become an integer, then tell the user to enter an integer.
         print("{} is not an integer between 0 and 9.".format(user_guess_string))
 
 
